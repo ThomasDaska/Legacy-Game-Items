@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Legacy Character Assignment Thomas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    <style>
+        body {
+        background-image: url("img/Frame.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <script>
+            var sound1 = new buzz.sound("Sound/fah.mp3");
+            var sound2 = new buzz.sound("Sound/taco-bell-bong-sfx.mp3");
+
+            window.onload = function() {
+                document.getElementById("cir").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("tri").addEventListener("click", function() {
+                    sound2.play();
+                });
+                document.getElementById("squ").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("hex").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("rec").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("sta").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("trr").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("sqr").addEventListener("click", function() {
+                    sound1.play();
+                });
+                document.getElementById("her").addEventListener("click", function() {
+                    sound1.play();
+                });
+        }
+        </script>
+        <div class="row">
+            <div class="image-container"><img id="cir" src="img/KnightSimple.png" onmouseover="this.src='img/KnightLegacy.png';" onmouseout="this.src='img/KnightSimple.png'"height="300" width="200"/></div>
+            <div class="image-container"><img id="tri" src="img/SimpSkull.png" onmouseover="this.src='img/LegSkull.png';" onmouseout="this.src='img/SimpSkull.png'" height="300" width="200"/></div>
+            <div class="image-container"><img id="squ" src="img/SimpTomb.png" onmouseover="this.src='img/LegTomb.png';" onmouseout="this.src='img/SimpTomb.png'" height="300" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="hex" src="img/SimpHist.png" onmouseover="this.src='img/LegHist.png';" onmouseout="this.src='img/SimpHist.png'"   height="300" width="200"/></div>
+            <div class="image-container"><img id="rec" src="img/BillySimp.png" onmouseover="this.src='img/BillyLeg.png';" onmouseout="this.src='img/BillySimp.png'" height="300" width="200"/></div>
+            <div class="image-container"><img id="sta" src="img/SimpPheo.png" onmouseover="this.src='img/LegPheo.png';" onmouseout="this.src='img/SimpPheo.png'" height="300" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="trr" src="img/SimpBook.png" onmouseover="this.src='img/sqr.png';" onmouseout="this.src='img/SimpBook.png'" height="300" width="200"/></div>
+            <div class="image-container"><img id="sqr" src="img/SimpLVL.png" onmouseover="this.src='img/LegLVL.png';" onmouseout="this.src='img/SimpLVL.png'" height="300" width="200"/></div>
+            <div class="image-container"><img id="her" src="img/SimpCan.png" onmouseover="this.src='img/cir.png';" onmouseout="this.src='img/SimpCan.png'" height="300" width="200"/></div>
+        </div>
+        
+    </body>
+    
+</html>
